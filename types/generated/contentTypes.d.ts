@@ -384,6 +384,12 @@ export interface ApiOpeningOpening extends Schema.CollectionType {
       ]
     >;
     phoneNum: Attribute.String;
+    autoCharge: Attribute.Boolean;
+    country: Attribute.Enumeration<
+      ['USA', 'CHINA', 'REPUBLIC OF KOREA', 'JAPAN', 'TAIWAN', 'THAILAND']
+    >;
+    passport: Attribute.Boolean;
+    memo: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

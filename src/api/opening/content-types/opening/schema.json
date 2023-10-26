@@ -26,6 +26,26 @@
     },
     "phoneNum": {
       "type": "string"
+    },
+    "autoCharge": {
+      "type": "boolean"
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "USA",
+        "CHINA",
+        "REPUBLIC OF KOREA",
+        "JAPAN",
+        "TAIWAN",
+        "THAILAND"
+      ]
+    },
+    "passport": {
+      "type": "boolean"
+    },
+    "memo": {
+      "type": "richtext"
     }
   }
 }

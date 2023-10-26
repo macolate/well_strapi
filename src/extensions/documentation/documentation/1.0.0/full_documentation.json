@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-10-25T07:15:16.983Z"
+    "x-generation-date": "2023-10-26T06:45:11.653Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -109,6 +109,26 @@
               },
               "phoneNum": {
                 "type": "string"
+              },
+              "autoCharge": {
+                "type": "boolean"
+              },
+              "country": {
+                "type": "string",
+                "enum": [
+                  "USA",
+                  "CHINA",
+                  "REPUBLIC OF KOREA",
+                  "JAPAN",
+                  "TAIWAN",
+                  "THAILAND"
+                ]
+              },
+              "passport": {
+                "type": "boolean"
+              },
+              "memo": {
+                "type": "string"
               }
             }
           }
@@ -176,6 +196,26 @@
             ]
           },
           "phoneNum": {
+            "type": "string"
+          },
+          "autoCharge": {
+            "type": "boolean"
+          },
+          "country": {
+            "type": "string",
+            "enum": [
+              "USA",
+              "CHINA",
+              "REPUBLIC OF KOREA",
+              "JAPAN",
+              "TAIWAN",
+              "THAILAND"
+            ]
+          },
+          "passport": {
+            "type": "boolean"
+          },
+          "memo": {
             "type": "string"
           },
           "createdAt": {
