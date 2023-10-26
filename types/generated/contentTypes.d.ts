@@ -383,13 +383,13 @@ export interface ApiOpeningOpening extends Schema.CollectionType {
         'OPENING_TYPE_CHANGE_USIM'
       ]
     >;
-    phoneNum: Attribute.String;
     autoCharge: Attribute.Boolean;
     country: Attribute.Enumeration<
       ['USA', 'CHINA', 'REPUBLIC OF KOREA', 'JAPAN', 'TAIWAN', 'THAILAND']
     >;
     passport: Attribute.Boolean;
     memo: Attribute.RichText;
+    phoneNumber: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

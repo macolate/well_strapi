@@ -24,9 +24,6 @@
         "OPENING_TYPE_CHANGE_USIM"
       ]
     },
-    "phoneNum": {
-      "type": "string"
-    },
     "autoCharge": {
       "type": "boolean"
     },
@@ -46,6 +43,9 @@
     },
     "memo": {
       "type": "richtext"
+    },
+    "phoneNumber": {
+      "type": "integer"
     }
   }
 }
