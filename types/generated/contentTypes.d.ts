@@ -389,7 +389,13 @@ export interface ApiOpeningOpening extends Schema.CollectionType {
     >;
     passport: Attribute.Boolean;
     memo: Attribute.RichText;
-    phoneNumber: Attribute.Integer;
+    phoneNumber: Attribute.String;
+    operatorName: Attribute.String;
+    productName: Attribute.String;
+    initCharge: Attribute.Integer;
+    companyName: Attribute.String;
+    companyNumber: Attribute.String;
+    writer: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -45,7 +45,25 @@
       "type": "richtext"
     },
     "phoneNumber": {
+      "type": "string"
+    },
+    "operatorName": {
+      "type": "string"
+    },
+    "productName": {
+      "type": "string"
+    },
+    "initCharge": {
       "type": "integer"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "companyNumber": {
+      "type": "string"
+    },
+    "writer": {
+      "type": "string"
     }
   }
 }
