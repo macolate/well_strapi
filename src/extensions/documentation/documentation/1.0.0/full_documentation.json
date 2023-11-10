@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-10-30T04:40:46.776Z"
+    "x-generation-date": "2023-11-10T05:39:22.109Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -104,7 +104,21 @@
                   "OPENING_TYPE_UNKNOWN",
                   "OPENING_TYPE_NEW_REGISTRATION",
                   "OPENING_TYPE_NUMBER_TRANSFER",
-                  "OPENING_TYPE_CHANGE_USIM"
+                  "OPENING_TYPE_CHANGE_USIM",
+                  "OPENING_TYPE_CHANGE_RESIDENCE_CARD",
+                  "OPENING_TYPE_TERMINATION_SAMEDAY",
+                  "OPENING_TYPE_TERMINATION_SAMEMONTH",
+                  "OPENING_TYPE_CHANGE_NUMBER",
+                  "OPENING_TYPE_CHANGE_DEVICE",
+                  "OPENING_TYPE_CHANGE_NAME",
+                  "OPENING_TYPE_TERMINATION",
+                  "OPENING_TYPE_SUSPENSION",
+                  "OPENING_TYPE_CHANGE_PRODUCT",
+                  "OPENING_TYPE_IMMEDIATE_TERMINATION",
+                  "OPENING_TYPE_TERMINATION_RECOVERY",
+                  "OPENING_TYPE_TERM_EXTENSION",
+                  "OPENING_TYPE_DIRECT_DEBIT",
+                  "OPENING_TYPE_REQUEST_DELETE"
                 ]
               },
               "autoCharge": {
@@ -210,7 +224,21 @@
               "OPENING_TYPE_UNKNOWN",
               "OPENING_TYPE_NEW_REGISTRATION",
               "OPENING_TYPE_NUMBER_TRANSFER",
-              "OPENING_TYPE_CHANGE_USIM"
+              "OPENING_TYPE_CHANGE_USIM",
+              "OPENING_TYPE_CHANGE_RESIDENCE_CARD",
+              "OPENING_TYPE_TERMINATION_SAMEDAY",
+              "OPENING_TYPE_TERMINATION_SAMEMONTH",
+              "OPENING_TYPE_CHANGE_NUMBER",
+              "OPENING_TYPE_CHANGE_DEVICE",
+              "OPENING_TYPE_CHANGE_NAME",
+              "OPENING_TYPE_TERMINATION",
+              "OPENING_TYPE_SUSPENSION",
+              "OPENING_TYPE_CHANGE_PRODUCT",
+              "OPENING_TYPE_IMMEDIATE_TERMINATION",
+              "OPENING_TYPE_TERMINATION_RECOVERY",
+              "OPENING_TYPE_TERM_EXTENSION",
+              "OPENING_TYPE_DIRECT_DEBIT",
+              "OPENING_TYPE_REQUEST_DELETE"
             ]
           },
           "autoCharge": {
