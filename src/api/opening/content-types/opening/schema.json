@@ -78,6 +78,9 @@
     },
     "writer": {
       "type": "string"
+    },
+    "salesMan": {
+      "type": "string"
     }
   }
 }

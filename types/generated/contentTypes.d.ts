@@ -410,6 +410,7 @@ export interface ApiOpeningOpening extends Schema.CollectionType {
     companyName: Attribute.String;
     companyNumber: Attribute.String;
     writer: Attribute.String;
+    salesMan: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
