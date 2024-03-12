@@ -362,135 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiOpeningOpening extends Schema.CollectionType {
-  collectionName: 'openings';
-  info: {
-    singularName: 'opening';
-    pluralName: 'openings';
-    displayName: 'opening';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    customerName: Attribute.String;
-    openingType: Attribute.Enumeration<
-      [
-        'OPENING_TYPE_UNKNOWN',
-        'OPENING_TYPE_NEW_REGISTRATION',
-        'OPENING_TYPE_NUMBER_TRANSFER',
-        'OPENING_TYPE_CHANGE_USIM',
-        'OPENING_TYPE_CHANGE_RESIDENCE_CARD',
-        'OPENING_TYPE_TERMINATION_SAMEDAY',
-        'OPENING_TYPE_TERMINATION_SAMEMONTH',
-        'OPENING_TYPE_CHANGE_NUMBER',
-        'OPENING_TYPE_CHANGE_DEVICE',
-        'OPENING_TYPE_CHANGE_NAME',
-        'OPENING_TYPE_TERMINATION',
-        'OPENING_TYPE_SUSPENSION',
-        'OPENING_TYPE_CHANGE_PRODUCT',
-        'OPENING_TYPE_IMMEDIATE_TERMINATION',
-        'OPENING_TYPE_TERMINATION_RECOVERY',
-        'OPENING_TYPE_TERM_EXTENSION',
-        'OPENING_TYPE_DIRECT_DEBIT',
-        'OPENING_TYPE_REQUEST_DELETE'
-      ]
-    >;
-    autoCharge: Attribute.Boolean;
-    country: Attribute.Enumeration<
-      ['USA', 'CHINA', 'REPUBLIC OF KOREA', 'JAPAN', 'TAIWAN', 'THAILAND']
-    >;
-    passport: Attribute.Boolean;
-    memo: Attribute.RichText;
-    phoneNumber: Attribute.String;
-    operatorName: Attribute.String;
-    productName: Attribute.String;
-    initCharge: Attribute.Integer;
-    companyName: Attribute.String;
-    companyNumber: Attribute.String;
-    writer: Attribute.String;
-    salesMan: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::opening.opening',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::opening.opening',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiOperatorOperator extends Schema.CollectionType {
-  collectionName: 'operators';
-  info: {
-    singularName: 'operator';
-    pluralName: 'operators';
-    displayName: 'Operator';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    operatorName: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::operator.operator',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::operator.operator',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiProductProduct extends Schema.CollectionType {
-  collectionName: 'products';
-  info: {
-    singularName: 'product';
-    pluralName: 'products';
-    displayName: 'Product';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    productName: Attribute.String;
-    operatorName: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::product.product',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::product.product',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -806,6 +677,175 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiBusinessBusiness extends Schema.CollectionType {
+  collectionName: 'businesses';
+  info: {
+    singularName: 'business';
+    pluralName: 'businesses';
+    displayName: 'Business';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    companyName: Attribute.String;
+    acceptBefore: Attribute.Boolean;
+    insteadOfAcceptBefore: Attribute.Boolean;
+    phoneNumber: Attribute.String;
+    pCode: Attribute.String;
+    password: Attribute.String;
+    email: Attribute.Email;
+    education: Attribute.String;
+    registrationNumber: Attribute.String;
+    dateCreated: Attribute.Date;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::business.business',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::business.business',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiOpeningOpening extends Schema.CollectionType {
+  collectionName: 'openings';
+  info: {
+    singularName: 'opening';
+    pluralName: 'openings';
+    displayName: 'opening';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    customerName: Attribute.String;
+    openingType: Attribute.Enumeration<
+      [
+        'OPENING_TYPE_UNKNOWN',
+        'OPENING_TYPE_NEW_REGISTRATION',
+        'OPENING_TYPE_NUMBER_TRANSFER',
+        'OPENING_TYPE_CHANGE_USIM',
+        'OPENING_TYPE_CHANGE_RESIDENCE_CARD',
+        'OPENING_TYPE_TERMINATION_SAMEDAY',
+        'OPENING_TYPE_TERMINATION_SAMEMONTH',
+        'OPENING_TYPE_CHANGE_NUMBER',
+        'OPENING_TYPE_CHANGE_DEVICE',
+        'OPENING_TYPE_CHANGE_NAME',
+        'OPENING_TYPE_TERMINATION',
+        'OPENING_TYPE_SUSPENSION',
+        'OPENING_TYPE_CHANGE_PRODUCT',
+        'OPENING_TYPE_IMMEDIATE_TERMINATION',
+        'OPENING_TYPE_TERMINATION_RECOVERY',
+        'OPENING_TYPE_TERM_EXTENSION',
+        'OPENING_TYPE_DIRECT_DEBIT',
+        'OPENING_TYPE_REQUEST_DELETE'
+      ]
+    >;
+    autoCharge: Attribute.Boolean;
+    country: Attribute.Enumeration<
+      ['USA', 'CHINA', 'REPUBLIC OF KOREA', 'JAPAN', 'TAIWAN', 'THAILAND']
+    >;
+    passport: Attribute.Boolean;
+    memo: Attribute.RichText;
+    phoneNumber: Attribute.String;
+    operatorName: Attribute.String;
+    productName: Attribute.String;
+    initCharge: Attribute.Integer;
+    companyName: Attribute.String;
+    companyNumber: Attribute.String;
+    writer: Attribute.String;
+    salesMan: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::opening.opening',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::opening.opening',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiOperatorOperator extends Schema.CollectionType {
+  collectionName: 'operators';
+  info: {
+    singularName: 'operator';
+    pluralName: 'operators';
+    displayName: 'Operator';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    operatorName: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::operator.operator',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::operator.operator',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProductProduct extends Schema.CollectionType {
+  collectionName: 'products';
+  info: {
+    singularName: 'product';
+    pluralName: 'products';
+    displayName: 'Product';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    productName: Attribute.String;
+    operatorName: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::product.product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::product.product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -816,15 +856,16 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::opening.opening': ApiOpeningOpening;
-      'api::operator.operator': ApiOperatorOperator;
-      'api::product.product': ApiProductProduct;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::i18n.locale': PluginI18NLocale;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::business.business': ApiBusinessBusiness;
+      'api::opening.opening': ApiOpeningOpening;
+      'api::operator.operator': ApiOperatorOperator;
+      'api::product.product': ApiProductProduct;
     }
   }
 }
