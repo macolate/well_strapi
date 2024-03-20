@@ -694,11 +694,11 @@ export interface ApiBusinessBusiness extends Schema.CollectionType {
     insteadOfAcceptBefore: Attribute.Boolean;
     phoneNumber: Attribute.String;
     pCode: Attribute.String;
-    password: Attribute.String;
     email: Attribute.Email;
-    education: Attribute.String;
     registrationNumber: Attribute.String;
-    dateCreated: Attribute.Date;
+    memo: Attribute.Text;
+    education: Attribute.Boolean;
+    educationDate: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

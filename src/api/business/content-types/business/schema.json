@@ -27,20 +27,20 @@
     "pCode": {
       "type": "string"
     },
-    "password": {
-      "type": "string"
-    },
     "email": {
       "type": "email"
-    },
-    "education": {
-      "type": "string"
     },
     "registrationNumber": {
       "type": "string"
     },
-    "dateCreated": {
-      "type": "date"
+    "memo": {
+      "type": "text"
+    },
+    "education": {
+      "type": "boolean"
+    },
+    "educationDate": {
+      "type": "string"
     }
   }
 }
