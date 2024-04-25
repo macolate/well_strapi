@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "customerName": {
+    "customer_name": {
       "type": "string"
     },
     "openingType": {
@@ -58,7 +58,7 @@
     "memo": {
       "type": "richtext"
     },
-    "phoneNumber": {
+    "phone_number": {
       "type": "string"
     },
     "operatorName": {

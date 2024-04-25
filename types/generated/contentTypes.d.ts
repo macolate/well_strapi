@@ -729,7 +729,7 @@ export interface ApiOpeningOpening extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    customerName: Attribute.String;
+    customer_name: Attribute.String;
     openingType: Attribute.Enumeration<
       [
         'OPENING_TYPE_UNKNOWN',
@@ -758,7 +758,7 @@ export interface ApiOpeningOpening extends Schema.CollectionType {
     >;
     passport: Attribute.Boolean;
     memo: Attribute.RichText;
-    phoneNumber: Attribute.String;
+    phone_number: Attribute.String;
     operatorName: Attribute.String;
     productName: Attribute.String;
     initCharge: Attribute.Integer;
