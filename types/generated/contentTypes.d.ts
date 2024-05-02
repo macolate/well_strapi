@@ -752,7 +752,7 @@ export interface ApiOpeningOpening extends Schema.CollectionType {
         'OPENING_TYPE_REQUEST_DELETE'
       ]
     >;
-    autoCharge: Attribute.Boolean;
+    auto_charge: Attribute.Boolean;
     country: Attribute.Enumeration<
       ['USA', 'CHINA', 'REPUBLIC OF KOREA', 'JAPAN', 'TAIWAN', 'THAILAND']
     >;

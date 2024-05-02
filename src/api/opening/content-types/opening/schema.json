@@ -38,7 +38,7 @@
         "OPENING_TYPE_REQUEST_DELETE"
       ]
     },
-    "autoCharge": {
+    "auto_charge": {
       "type": "boolean"
     },
     "country": {
